@@ -1,0 +1,118 @@
+/* ==========================
+   Premium Top Toast
+========================== */
+
+.toast {
+
+    position: fixed;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translate(-50%, -120%);
+
+    width: 420px;
+    max-width: 90%;
+
+    background: rgba(18, 22, 38, .95);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 18px 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    color: white;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.35),
+        0 0 25px rgba(59,130,246,.15);
+
+    z-index: 9999;
+
+    transition: .45s ease;
+}
+
+.toast.show{
+
+    transform: translate(-50%,0);
+
+}
+
+.toast i{
+
+    font-size:32px;
+
+    color:#22c55e;
+
+}
+
+.toast h4{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.toast p{
+
+    margin-top:4px;
+
+    color:#cbd5e1;
+
+    font-size:14px;
+
+}
+
+.toast-progress{
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    height:4px;
+
+    width:100%;
+
+    background:linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    border-radius:0 0 18px 18px;
+
+    transform-origin:left;
+}
+
+.toast.show .toast-progress{
+
+    animation:progress 4s linear forwards;
+
+}
+
+@keyframes progress{
+
+    from{
+
+        transform:scaleX(1);
+
+    }
+
+    to{
+
+        transform:scaleX(0);
+
+    }
+
+}

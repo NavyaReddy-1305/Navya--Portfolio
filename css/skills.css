@@ -1,0 +1,195 @@
+/*==========================================
+                SKILLS
+==========================================*/
+
+#skills{
+
+    position:relative;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+/*==========================================*/
+
+.skill-category{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.skill-category::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:rgba(34,211,238,.10);
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    right:-60px;
+
+    top:-60px;
+
+}
+
+.skill-category:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(34,211,238,.20);
+
+}
+
+.skill-category h3{
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+    color:var(--primary);
+
+}
+
+/*==========================================*/
+
+.skill-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.skill-list span{
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+/* .skill-list span:hover{
+
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+    );
+
+    color:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(34,211,238,.30);
+
+} */
+
+/*==========================================*/
+
+.skill-category:nth-child(1) h3::before{
+
+content:"💻 ";
+
+}
+
+.skill-category:nth-child(2) h3::before{
+
+content:"🌐 ";
+
+}
+
+.skill-category:nth-child(3) h3::before{
+
+content:"⚙ ";
+
+}
+
+.skill-category:nth-child(4) h3::before{
+
+content:"🗄 ";
+
+}
+
+.skill-category:nth-child(5) h3::before{
+
+content:"🤖 ";
+
+}
+.skill-category:nth-child(6) h3::before{
+
+content:"🧠 ";
+
+}
+
+.skill-category:nth-child(7) h3::before{
+
+content:"🛠 ";
+
+}
+.skill-category:nth-child(8) h3::before{
+
+content:" 🤝";
+
+}
+
+/*==========================================*/
+
+@media(max-width:768px){
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.skill-category{
+
+padding:28px;
+
+}
+
+}
