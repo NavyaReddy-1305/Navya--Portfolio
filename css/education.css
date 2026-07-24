@@ -1,243 +1,363 @@
+/* ==========================================
+   EDUCATION SECTION
+========================================== */
+
 #education{
 
-padding:120px 8%;
+    padding:90px 7%;
 
-position:relative;
+    position:relative;
 
 }
 
 .education-timeline{
 
-max-width:1000px;
+    max-width:900px;
 
-margin:auto;
+    margin:auto;
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:40px;
+    gap:28px;
 
 }
+
+/* ==========================================
+   YEAR
+========================================== */
 
 .timeline-year{
 
-font-size:22px;
+    font-size:18px;
 
-font-weight:700;
+    font-weight:700;
 
-color:var(--primary);
+    color:var(--primary);
 
-margin-left:10px;
+    margin-left:8px;
 
 }
 
+/* ==========================================
+   TIMELINE
+========================================== */
+
 .timeline-content{
 
-display:flex;
+    display:flex;
 
-gap:40px;
+    gap:28px;
 
-position:relative;
+    position:relative;
 
 }
 
 .timeline-line{
 
-width:3px;
+    width:3px;
 
-background:linear-gradient(
-180deg,
-#3b82f6,
-#8b5cf6
-);
+    background:linear-gradient(
+        180deg,
+        #3b82f6,
+        #8b5cf6
+    );
 
-min-height:520px;
+    min-height:430px;
 
-border-radius:50px;
+    border-radius:50px;
 
-margin-left:12px;
+    margin-left:10px;
 
 }
 
 .timeline-dot{
 
-position:absolute;
+    position:absolute;
 
-left:4px;
+    left:2px;
 
-top:10px;
+    top:8px;
 
-width:18px;
+    width:15px;
 
-height:18px;
+    height:15px;
 
-background:#3b82f6;
+    background:#3b82f6;
 
-border-radius:50%;
+    border-radius:50%;
 
-box-shadow:0 0 25px #3b82f6;
+    box-shadow:0 0 18px #3b82f6;
 
-animation:pulse 2s infinite;
+    animation:pulse 2s infinite;
 
 }
 
+/* ==========================================
+   DETAILS
+========================================== */
+
 .education-details{
 
-flex:1;
+    flex:1;
 
-padding-left:20px;
+    padding-left:12px;
 
 }
 
 .education-details h2{
 
-font-size:34px;
+    font-size:28px;
 
-margin-bottom:10px;
+    margin-bottom:8px;
 
 }
 
 .education-details h3{
 
-font-size:22px;
+    font-size:19px;
 
-color:#cbd5e1;
+    color:#cbd5e1;
 
-margin-bottom:18px;
+    margin-bottom:14px;
 
 }
 
 .edu-location{
 
-color:#94a3b8;
+    color:#94a3b8;
 
-margin-bottom:20px;
+    margin-bottom:16px;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-gap:10px;
+    gap:8px;
+
+    font-size:15px;
 
 }
 
+/* ==========================================
+   INFO BOXES
+========================================== */
+
 .edu-info{
 
-display:flex;
+    display:flex;
 
-gap:25px;
+    gap:16px;
 
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
-margin-bottom:25px;
+    margin-bottom:20px;
 
 }
 
 .edu-info div{
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-gap:10px;
+    gap:8px;
 
-padding:12px 18px;
+    padding:10px 14px;
 
-background:rgba(59,130,246,.08);
+    background:rgba(59,130,246,.08);
 
-border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.08);
 
-border-radius:14px;
+    border-radius:10px;
+
+    font-size:14px;
 
 }
 
 .edu-info i{
 
-color:#3b82f6;
+    color:#3b82f6;
 
 }
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
 
 .edu-desc{
 
-line-height:1.9;
+    line-height:1.7;
 
-color:#cbd5e1;
+    color:#cbd5e1;
 
-margin-bottom:30px;
+    margin-bottom:22px;
 
-max-width:700px;
+    max-width:650px;
+
+    font-size:15px;
 
 }
 
+/* ==========================================
+   COURSEWORK
+========================================== */
+
 .education-details h4{
 
-margin-bottom:20px;
+    margin-bottom:14px;
 
-font-size:22px;
+    font-size:18px;
 
 }
 
 .course-tags{
 
-display:flex;
+    display:flex;
 
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
-gap:14px;
+    gap:10px;
 
 }
 
 .course-tags span{
 
-padding:12px 20px;
+    padding:9px 16px;
 
-border-radius:50px;
+    border-radius:40px;
 
-background:rgba(255,255,255,.05);
+    background:rgba(255,255,255,.05);
 
-border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.08);
 
-transition:.35s;
+    font-size:14px;
+
+    transition:.3s;
 
 }
 
 .course-tags span:hover{
 
-background:linear-gradient(
-135deg,
-#3b82f6,
-#8b5cf6
-);
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #8b5cf6
+    );
 
-transform:translateY(-4px);
+    transform:translateY(-3px);
 
 }
 
 .end{
 
-margin-left:10px;
+    margin-left:8px;
 
 }
+
+/* ==========================================
+   ANIMATION
+========================================== */
 
 @keyframes pulse{
 
-0%{
+    0%{
 
-box-shadow:0 0 0 0 rgba(59,130,246,.6);
+        box-shadow:0 0 0 0 rgba(59,130,246,.6);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 14px transparent;
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 transparent;
+
+    }
 
 }
 
-70%{
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
-box-shadow:0 0 0 18px transparent;
+@media(max-width:992px){
+
+    #education{
+
+        padding:75px 6%;
+
+    }
+
+    .timeline-content{
+
+        gap:20px;
+
+    }
+
+    .timeline-line{
+
+        min-height:380px;
+
+    }
+
+    .education-details h2{
+
+        font-size:24px;
+
+    }
+
+    .education-details h3{
+
+        font-size:17px;
+
+    }
 
 }
 
-100%{
+@media(max-width:768px){
 
-box-shadow:0 0 0 0 transparent;
+    #education{
 
-}
+        padding:65px 5%;
+
+    }
+
+    .education-timeline{
+
+        gap:22px;
+
+    }
+
+    .timeline-year{
+
+        font-size:16px;
+
+    }
+
+    .education-details h2{
+
+        font-size:22px;
+
+    }
+
+    .edu-info{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .course-tags{
+
+        gap:8px;
+
+    }
 
 }

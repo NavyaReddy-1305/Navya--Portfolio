@@ -39,7 +39,8 @@ body{
 
 section{
 
-    padding:110px 9%;
+    padding:70px 8%;
+
 
     position:relative;
 
@@ -56,6 +57,10 @@ h4{
 
     font-weight:700;
 
+}
+html{
+    scroll-behavior:smooth;
+    font-size:90%;
 }
 
 p{

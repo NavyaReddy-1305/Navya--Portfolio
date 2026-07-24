@@ -134,46 +134,58 @@ github:"https://github.com/NavyaReddy-1305/trip-planner-pro"
 
 function openProject(id){
 
-const p = projects[id];
+    const p = projects[id];
 
-document.getElementById("panelTitle").innerHTML = p.title;
+    document.getElementById("panelTitle").innerHTML = p.title;
 
-document.getElementById("panelOverview").innerHTML = p.overview;
+    document.getElementById("panelOverview").innerHTML = p.overview;
 
-document.getElementById("panelGithub").href = p.github;
+    const githubBtn = document.getElementById("panelGithub");
 
-const featureList = document.getElementById("panelFeatures");
+    if(p.github){
 
-featureList.innerHTML = "";
+        githubBtn.href = p.github;
+        githubBtn.style.display = "inline-flex";
 
-p.features.forEach(f=>{
+    }else{
 
-featureList.innerHTML += `<li>${f}</li>`;
+        githubBtn.style.display = "none";
 
-});
+    }
 
-const tech = document.getElementById("panelTech");
+    const featureList = document.getElementById("panelFeatures");
 
-tech.innerHTML = "";
+    featureList.innerHTML = "";
 
-p.tech.forEach(t=>{
+    p.features.forEach(f=>{
 
-tech.innerHTML += `<span>${t}</span>`;
+        featureList.innerHTML += `<li>${f}</li>`;
 
-});
+    });
 
-document.getElementById("projectOverlay").classList.add("show");
+    const tech = document.getElementById("panelTech");
 
-document.getElementById("projectPanel").classList.add("show");
+    tech.innerHTML = "";
+
+    p.tech.forEach(t=>{
+
+        tech.innerHTML += `<span>${t}</span>`;
+
+    });
+
+    document.getElementById("projectOverlay").classList.add("show");
+
+    document.getElementById("projectPanel").classList.add("show");
 
 }
-
 /*========================*/
 
 function closeProject(){
 
-document.getElementById("projectOverlay").classList.remove("show");
+    document.getElementById("projectOverlay").classList.remove("show");
 
-document.getElementById("projectPanel").classList.remove("show");
+    document.getElementById("projectPanel").classList.remove("show");
+
+    document.getElementById("panelGithub").style.display = "inline-flex";
 
 }

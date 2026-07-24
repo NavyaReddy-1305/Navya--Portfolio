@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌐 Navya Reddy | Personal Portfolio
 
 Welcome to my personal portfolio website!
@@ -117,3 +118,7 @@ Passionate about Software Engineering, Artificial Intelligence, Machine Learning
 ---
 
 ⭐ If you like this portfolio, consider giving this repository a star!
+=======
+# navya-portfolio
+A modern, responsive personal portfolio showcasing my projects, technical skills, certifications, and experience in Full Stack Development, AI, and Machine Learning. Built with HTML, CSS, JavaScript, and EmailJS.
+>>>>>>> 6468c9b (Initial commit)
