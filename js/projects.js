@@ -34,6 +34,9 @@ tech:[
 "Python",
 "Multimodal LLMs",
 "RAG",
+"LlamaParse",
+"Qdrant",
+"Nomic",
 "Machine Learning",
 "NLP",
 "Medical Imaging",
@@ -78,7 +81,9 @@ tech:[
 "RAG",
 "NLP",
 "Machine Learning",
-"Medical Imaging"
+"Medical Imaging",
+"Qdrant",
+"LlamaParse",
 
 ],
 
