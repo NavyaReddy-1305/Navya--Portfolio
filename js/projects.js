@@ -3,136 +3,113 @@
 
 const projects = {
 
-project1:{
 
-title:"Boosting Healthcare Using Multimodal LLMs",
+project1: {
+    title: "Boosting Healthcare Using Multimodal LLMs",
 
-overview:"AI-powered healthcare platform that integrates medical reports, radiology images, clinical notes, patient symptoms, and physiological sensor data using Multimodal LLMs and Retrieval-Augmented Generation (RAG) to provide intelligent clinical decision support.",
+    overview:
+        "An AI-powered healthcare application that combines medical document processing, radiology image analysis, and Retrieval-Augmented Generation (RAG) to make medical information more accessible. The system processes healthcare documents, retrieves relevant information, generates concise medical summaries, and supports context-aware question answering using multimodal AI.",
 
-features:[
+    features: [
+        "Medical document parsing and information extraction",
+        "Radiology image analysis",
+        "AI-powered medical report summarization",
+        "Semantic retrieval of relevant medical information",
+        "Context-aware healthcare question answering",
+        "Retrieval-Augmented Generation (RAG)",
+        "Multimodal medical information processing",
+        "Clinical keyword retention evaluation"
+    ],
 
-"Multimodal medical report analysis",
+    tech: [
+        "Python",
+        "Multimodal LLMs",
+        "RAG",
+        "LlamaParse",
+        "Qdrant",
+        "Nomic Embeddings",
+        "NLP",
+        "Machine Learning",
+        "Medical Imaging",
+        "Gradio"
+    ],
 
-"Radiology image understanding",
-
-"AI-generated report summarization",
-
-"Disease detection",
-
-"Root cause analysis",
-
-"Personalized health recommendations",
-
-"Predictive health risk assessment",
-
-"Retrieval-Augmented Generation (RAG)"
-
-],
-
-tech:[
-
-"Python",
-"Multimodal LLMs",
-"RAG",
-"LlamaParse",
-"Qdrant",
-"Nomic",
-"Machine Learning",
-"NLP",
-"Medical Imaging",
-"AI"
-
-],
-
-github:"https://github.com/NavyaReddy-1305/Boosting-HealthCare-using-Multimodal-LLM-s"
-
+    github:
+        "https://github.com/NavyaReddy-1305/Boosting-HealthCare-using-Multimodal-LLM-s"
 },
 
-project2:{
 
-title:"HealthSync AI",
 
-overview:"HealthSync AI extends the healthcare platform with personalized patient memory, enabling context-aware healthcare assistance through intelligent analysis of medical reports, radiology images, symptoms, and patient history.",
+project2: {
+  title: "HealthSync AI",
 
-features:[
+  overview:
+    "HealthSync AI extends Boosting Healthcare Using Multimodal LLMs by integrating medical reports, radiology images, and physiological sensor data to build a unified, history-aware patient context. It combines multimodal AI, deep learning, and Retrieval-Augmented Generation (RAG) to support contextual medical information retrieval, report summarization, image interpretation, and personalized healthcare assistance.",
 
-"Personalized patient memory",
+  features: [
+    "Personalized patient memory",
+    "Context-aware healthcare assistance",
+    "Medical report processing and summarization",
+    "Radiology image interpretation using multimodal AI",
+    "Physiological sensor data analysis",
+    "Temporal feature extraction using 1D CNN",
+    "Clinical information retrieval",
+    "RAG-powered medical question answering"
+  ],
 
-"Context-aware healthcare assistance",
+  tech: [
+    "Python",
+    "Multimodal LLMs",
+    "RAG",
+    "NLP",
+    "Machine Learning",
+    "Deep Learning",
+    "BGE Embeddings",
+    "Qdrant",
+    "CLIP",
+    "Qwen",
+    "1D CNN",
+    "Groq API"
+  ]
 
-"Medical report summarization",
 
-"Radiology image interpretation",
-
-"Disease detection",
-
-"Health risk prediction",
-
-"Clinical note understanding",
-
-"RAG-powered medical responses"
-
-],
-
-tech:[
-
-"Python",
-"LLMs",
-"RAG",
-"NLP",
-"Machine Learning",
-"Medical Imaging",
-"Qdrant",
-"LlamaParse",
-
-],
 
 // github:"#"
 
 },
 
-project3:{
 
-title:"TripNavigator",
+project3: {
+    title: "TripNavigator",
 
-overview:"Multi-Agent AI travel planning platform that coordinates intelligent agents for destination selection, accommodation, transportation, itinerary generation, and budget optimization to deliver personalized travel experiences.",
+    overview:
+        "TripNavigator is an Agentic AI travel planning platform that coordinates specialized AI agents for destination discovery, accommodation recommendations, transportation planning, itinerary generation, and budget management. It uses user preferences and LLM-powered reasoning to create personalized travel plans through a unified planning workflow.",
 
-features:[
+    features: [
+        "Multi-Agent AI orchestration",
+        "Personalized travel itinerary generation",
+        "Destination recommendations",
+        "Accommodation recommendations",
+        "Transportation planning",
+        "Travel budget estimation and optimization",
+        "Preference-based trip planning",
+        "Explainable AI-generated recommendations"
+    ],
 
-"Multi-Agent AI",
+    tech: [
+        "Python",
+        "React",
+        "FastAPI",
+        "Multi-Agent AI",
+        "LLMs",
+        "Groq API",
+        "REST APIs",
+        "JavaScript"
+    ],
 
-"Personalized itinerary generation",
-
-"Budget optimization",
-
-"Destination recommendations",
-
-"Hotel recommendations",
-
-"Transportation planning",
-
-"Explainable AI",
-
-"Interactive travel planner"
-
-],
-
-tech:[
-
-"Python",
-"FastAPI",
-"React",
-"Groq API",
-"LLMs",
-"Streamlit",
-"JavaScript"
-
-],
-
-github:"https://github.com/NavyaReddy-1305/trip-planner-pro"
-
-}
-
+    github:
+        "https://github.com/NavyaReddy-1305/trip-planner-pro"
+},
 };
 
 /*========================*/
